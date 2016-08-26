@@ -10,6 +10,8 @@ namespace Prueba_MVC_Music_Store.Controllers
     {
         public ActionResult Index()
         {
+
+
             return View();
         }
 

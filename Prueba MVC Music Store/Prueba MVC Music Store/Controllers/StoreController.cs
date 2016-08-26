@@ -8,6 +8,7 @@ namespace Prueba_MVC_Music_Store.Controllers
 {
     public class StoreController : Controller
     {
+        
         //
         // GET: /Store/
         public string Index()
