@@ -9,12 +9,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{E95A9463-487D-4177-ADC7-C65F564A97B7}</ProjectGuid>
+    <ProjectGuid>{74A90987-CA3A-40A2-8FBE-B8232DB6D70F}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Prueba_MVC_Music_Store</RootNamespace>
-    <AssemblyName>Prueba MVC Music Store</AssemblyName>
+    <RootNamespace>Capitulo4Modelos</RootNamespace>
+    <AssemblyName>Capitulo4Modelos</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
@@ -198,22 +198,16 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\PruebaController.cs" />
-    <Compile Include="Controllers\StoreController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\Book.cs" />
+    <Compile Include="Models\Album.cs" />
+    <Compile Include="Models\Artist.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Samples\AlbumList\Album.cs" />
-    <Compile Include="Samples\AlbumList\AlbumsController.cs" />
-    <Compile Include="Samples\ShoppingCartViewModel\ProductModel.cs" />
-    <Compile Include="Samples\ShoppingCartViewModel\ShoppingCartController.cs" />
-    <Compile Include="Samples\ShoppingCartViewModel\ShoppingCartViewModel.cs" />
-    <Compile Include="Samples\SpecifyingViews\SampleController.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -276,21 +270,9 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Prueba\Index.cshtml" />
-    <Content Include="Views\Prueba\View.cshtml" />
-    <Content Include="Views\ShoppingCart\Index.cshtml" />
-    <Content Include="Views\Albums\ListWeaklyTyped.cshtml" />
-    <Content Include="Views\Albums\ListStronglyTyped.cshtml" />
-    <Content Include="Views\Sample\PartialViewDemo.cshtml" />
-    <Content Include="Views\Sample\NotIndex.cshtml" />
-    <Content Include="Views\Sample\Message.cshtml" />
-    <Content Include="Views\Sample\Index.cshtml" />
-    <Content Include="Views\Example\Index.cshtml" />
-    <Content Include="Views\Home\Prueba.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Store\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -316,9 +298,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>51067</DevelopmentServerPort>
+          <DevelopmentServerPort>50662</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:51067/</IISUrl>
+          <IISUrl>http://localhost:50662/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

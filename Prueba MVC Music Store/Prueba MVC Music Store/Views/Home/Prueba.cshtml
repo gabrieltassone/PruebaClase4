@@ -1,0 +1,12 @@
+﻿@model IEnumerable<Prueba_MVC_Music_Store.Models.Albums> 
+
+@{
+    ViewBag.Title = "Albums";
+}
+
+@foreach (var a in Model)
+{
+    //si cambiamos Albums por Book o por otro modelo, se ejecuta pero da error al mostrar la vista.
+    <h1>@a.Name</h1>
+}
+

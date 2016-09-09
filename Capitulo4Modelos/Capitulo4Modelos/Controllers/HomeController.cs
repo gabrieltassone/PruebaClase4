@@ -3,11 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using Prueba_MVC_Music_Store.Models;
 
-
-
-namespace Prueba_MVC_Music_Store.Controllers
+namespace Capitulo4Modelos.Controllers
 {
     public class HomeController : Controller
     {
@@ -18,7 +15,7 @@ namespace Prueba_MVC_Music_Store.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Music Store";
+            ViewBag.Message = "Your application description page.";
 
             return View();
         }
@@ -28,14 +25,6 @@ namespace Prueba_MVC_Music_Store.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
-        }
-
-        public ActionResult Prueba()
-        {
-            var albums = new List<Albums>();
-            albums.Add(new Albums { Name = "Fuerza Natural" });
-
-            return View(albums);
         }
     }
 }
